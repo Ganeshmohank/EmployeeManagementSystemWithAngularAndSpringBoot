@@ -1,0 +1,24 @@
+<h3 class="text-center">Add employee</h3>
+<form (ngSubmit)="onSubmit()">
+<div class="postForm    ">
+    <div class="form-group">
+        <label>Fist Name</label>
+        <input type="text" class="form-control" id="firstname" required name="firstname" [(ngModel)]="employee.firstname" >
+    </div>
+    <br>
+    <div class="form-group">
+        <label>Last Name</label>
+        <input type="text" class="form-control" id="lastname" required [(ngModel)]="employee.lastname" name="lastname">
+    </div>
+    <br>
+    <div class="form-group">
+        <label>Email Id</label>
+        <input type="email" class="form-control" id="email" required [(ngModel)]="employee.email" name="email">
+    </div>
+    <br>
+    <button class="btn btn-success" type="submit" >Submit</button>
+</div>
+<p class="alert" *ngIf="!!error">
+    <ngb-alert >{{ error}}</ngb-alert>
+  </p>
+</form>

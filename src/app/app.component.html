@@ -1,0 +1,23 @@
+<h1 class="text-center">{{title}}</h1>
+
+<ul ngbNav #nav="ngbNav" [(activeId)]="active" class="nav-tabs">
+  <li [ngbNavItem]="1">
+    <a ngbNavLink routerLink="employees" routerLinkActive="active" class="nav-link">Fetch employee</a>
+  </li>
+  <li [ngbNavItem]="2">
+    <a ngbNavLink routerLink="add-employee" routerLinkActive="active" class="nav-link">Add employee</a>
+  </li>
+  <li [ngbNavItem]="3">
+    <a ngbNavLink routerLink="manage-employee" routerLinkActive="active" class="nav-link">Manage employee</a>
+  </li>
+</ul>
+
+<div [ngbNavOutlet]="nav" class="mt-2"></div>
+
+<br>
+<div class="container d1">
+  <router-outlet></router-outlet>
+</div>
+<div class="footer">
+
+</div>

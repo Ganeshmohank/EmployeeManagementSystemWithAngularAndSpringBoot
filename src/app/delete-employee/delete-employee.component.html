@@ -1,0 +1,33 @@
+<h3 class="text-center">Manage-Employee</h3>
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th scope="col">FirstName</th>
+      <th scope="col">FirstName</th>
+      <th scope="col">email</th>
+      <th scope="col">view</th>
+      <th scope="col">update</th>
+      <th scope="col">delete</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let employee of employees">
+      <th scope="row">{{employee.firstname}}</th>
+      <td>
+        <p>{{employee.lastname}}</p>
+      </td>
+      <td>
+        <p>{{employee.email}}</p>
+      </td>
+      <td>
+        <button (click)="viewEmployee(employee.id)" class="btn btn-success">View</button>
+      </td>
+      <td>
+        <button type="submit" (click)="updateEmployee(employee.id)" class="btn btn-warning">Update</button>
+      </td>
+      <td>
+        <button (click)="deleteEmp(employee.id||0)" class="btn btn-danger">Delete</button>
+      </td>
+    </tr>
+  </tbody>
+</table>

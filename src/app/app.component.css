@@ -1,0 +1,16 @@
+.footer{
+    position: absolute;
+    bottom: 0px;
+    background-color:blue;
+    height: 20px;
+    width: 100%;
+}
+.d1{
+    overflow: auto;
+    max-height: 570px;
+    overflow-x: hidden;
+}
+h1{
+    margin-top: 10px;
+    margin-bottom: -10px;
+}

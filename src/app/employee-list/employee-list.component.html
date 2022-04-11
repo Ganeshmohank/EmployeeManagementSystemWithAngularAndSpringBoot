@@ -1,0 +1,21 @@
+<h3 class="text-center">Employee-Details</h3>
+<table class="table table-striped">
+    <thead>
+    <tr>
+      <th scope="col">FirstName</th>
+      <th scope="col">FirstName</th>
+      <th scope="col">email</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let employee of employees">
+      <th scope="row">{{employee.firstname}}</th>
+      <td>
+        <p>{{employee.lastname}}</p>
+      </td>
+      <td>
+        <p>{{employee.email}}</p>
+      </td>
+    </tr>
+    </tbody>
+  </table>

@@ -1,0 +1,1 @@
+select * from emp_mng_sys.employees;
